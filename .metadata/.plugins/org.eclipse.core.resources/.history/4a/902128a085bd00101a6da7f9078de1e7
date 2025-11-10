@@ -1,0 +1,20 @@
+package Controller;
+
+import java.io.IOException;
+import java.util.Date;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class SharerServlet extends HttpServlet{
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException {
+			req.setAttribute("message", "Welcome Fpt Polytechnic!");
+			req.setAttribute("now", new Date());
+			req.getRequestDispatcher("/page.jsp").forward(req, resp);
+	}
+	
+}

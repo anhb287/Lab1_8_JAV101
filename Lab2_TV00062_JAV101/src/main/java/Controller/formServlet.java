@@ -1,0 +1,45 @@
+package Controller;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/form/update")
+public class formServlet extends HttpServlet {
+	protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        req.getRequestDispatcher("/form.jsp").forward(req, resp);
+    }
+
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        
+    	// BÀI 4: Sử dụng JavaBean thay Map
+    	// Tạo JavaBean User và đặt thuộc tính vào request
+        User bean = new User(); 
+        bean.setFullname("Nguyễn Văn Tèo"); 
+        bean.setGender(true); // true cho Male
+        bean.setCountry("VN"); 
+        req.setAttribute("user", bean); 
+        
+       // Thiết lập biến điều khiển
+        req.setAttribute("editabled", true); 
+        
+        processRequest(req, resp);
+    }
+
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        
+       // Bài 3: Lấy dữ liệu từ form và in ra console
+        String fullname = req.getParameter("fullname");
+        System.out.println("Fullname nhận được từ Form: " + fullname); 
+
+        // Sau khi xử lý (thường là lưu DB), forward lại Form để hiển thị lại
+        processRequest(req, resp); 
+    }
+}

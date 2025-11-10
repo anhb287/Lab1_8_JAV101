@@ -1,0 +1,16 @@
+package test_lab;
+
+import java.io.IOException;
+import java.security.ProtectionDomain;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Bai3_controller extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("bai2.jsp").forward(req, resp);
+	}
+}
