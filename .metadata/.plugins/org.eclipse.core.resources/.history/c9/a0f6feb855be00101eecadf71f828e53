@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LAB 2: Menu Điều Hướng</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .menu-link { 
+            display: block; 
+            margin: 10px 0; 
+            padding: 12px 15px; 
+            border: 1px solid #007bff; 
+            border-radius: 5px;
+            text-decoration: none; 
+            color: #007bff; 
+            background-color: #f4f8ff;
+            font-weight: bold;
+        }
+        .menu-link:hover { 
+            background-color: #007bff; 
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <h1>LAB 2: MENU CÁC BÀI TẬP</h1>
+    <p>Chọn bài tập bạn muốn kiểm tra:</p>
+    
+    <div class="menu">
+        <a href="sharer" class="menu-link">Bài 1: Truyền Dữ Liệu Cơ Bản (SharerServlet)</a>
+        <a href="user" class="menu-link">Bài 2: Sử Dụng jsp:include (UserServlet)</a>
+        <a href="form/update" class="menu-link">Bài 3 & 4: Form & JavaBean (FormServlet)</a>
+    </div>
+    <hr>
+
+    <div class="item">
+        <jsp:include page="item.jsp">
+            <jsp:param name="name" value="Anh 1"/>
+            <jsp:param name="img" value="Anh1.png"/>
+        </jsp:include>
+    </div>
+
+    <div class="item">
+        <jsp:include page="item.jsp">
+            <jsp:param name="name" value="Anh 2"/>
+            <jsp:param name="img" value="anh2.png"/>
+        </jsp:include>
+    </div>
+
+    <div class="item">
+        <jsp:include page="item.jsp">
+            <jsp:param name="name" value="Anh 3"/>
+            <jsp:param name="img" value="anh3.png"/>
+        </jsp:include >
+    </div>
+
+    <div class="item">
+        <jsp:include page="item.jsp">
+            <jsp:param name="name" value="Product 4"/>
+            <jsp:param name="img" value="anh4.png"/> 
+        </jsp:include>
+    </div>
+</body>
+</html>
