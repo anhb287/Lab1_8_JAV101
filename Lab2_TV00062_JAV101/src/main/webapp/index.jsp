@@ -7,10 +7,17 @@
     <title>LAB 2: Menu Điều Hướng</title>
     <style>
     .container {
-        display: flex; /* Bật chế độ Flexbox */
-        flex-wrap: wrap; /* Cho phép các mục nhảy xuống hàng mới nếu không đủ chỗ */
-        justify-content: space-around; /* Căn giữa các item và tạo khoảng trống đồng đều giữa chúng */
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
         margin-top: 20px;
+    }
+    .menu{
+ 		display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        margin-top: 20px;
+    
     }
         body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
         .menu-link { 
@@ -28,11 +35,18 @@
             background-color: #007bff; 
             color: white; 
         }
+      
     </style>
 </head>
 <body>
-    <h1>LAB 2: MENU CÁC BÀI TẬP</h1>
-    <p>Chọn bài tập bạn muốn kiểm tra:</p>
+
+	<div class = "Tieude">
+	
+		<h1>LAB 2: MENU CÁC BÀI TẬP</h1>
+	    <p>Chọn bài tập bạn muốn kiểm tra:</p>
+	    
+	</div>
+    
     
     <div class="menu">
         <a href="sharer" class="menu-link">Bài 1: Truyền Dữ Liệu Cơ Bản (SharerServlet)</a>
