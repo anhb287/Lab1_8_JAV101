@@ -142,7 +142,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Lab1_TV00062" path="/Lab1_TV00062" reloadable="true" source="org.eclipse.jst.jee.server:Lab1_TV00062"/><Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Lab2_TV00062_JAV101" path="/Lab2_TV00062_JAV101" reloadable="true" source="org.eclipse.jst.jee.server:Lab2_TV00062_JAV101"/></Host>
+      <Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Lab1_TV00062" path="/Lab1_TV00062" reloadable="true" source="org.eclipse.jst.jee.server:Lab1_TV00062"/><Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Lab2_TV00062_JAV101" path="/Lab2_TV00062_JAV101" reloadable="true" source="org.eclipse.jst.jee.server:Lab2_TV00062_JAV101"/><Context docBase="D:\EclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Lab3_JAV101" path="/Lab3_JAV101" reloadable="true" source="org.eclipse.jst.jee.server:Lab3_JAV101"/></Host>
     </Engine>
   </Service>
 </Server>

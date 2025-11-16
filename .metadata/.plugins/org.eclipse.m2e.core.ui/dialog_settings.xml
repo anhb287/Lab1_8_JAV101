@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="LAb3"/>
+			<item value="Lab3_JAV101"/>
 			<item value="Lab2_TV00062_JAV101"/>
 			<item value="Lab2_Tv00062_JAV101"/>
 			<item value="test_lab"/>
@@ -9,6 +11,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="LAb3"/>
+			<item value="Lab3_JAV101"/>
 			<item value="Lab2_TV00062_JAV101"/>
 			<item value="Lab2_Tv00062_JAV101"/>
 			<item value="test_lab"/>

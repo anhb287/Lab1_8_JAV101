@@ -1,0 +1,99 @@
+/* Đặt lại mặc định trình duyệt */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; 
+    color: #333;
+}
+
+/* Container chính để căn giữa nội dung */
+.container {
+    max-width: 960px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+}
+
+/* Header của trang */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #2c3e50; 
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-top: 0;
+}
+
+/* Menu các bài tập (Flexbox để sắp xếp) */
+.exercises-menu {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+/* Định dạng từng thẻ bài tập (liên kết) */
+.exercise-card {
+    display: block;
+    width: 280px; 
+    padding: 25px;
+    background-color: #e9f7ff; 
+    border: 1px solid #cceeff; 
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #2c3e50; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+}
+
+.exercise-card:hover {
+    background-color: #007bff; 
+    color: #ffffff; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); 
+}
+
+.exercise-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0056b3; 
+    transition: color 0.3s ease;
+}
+
+.exercise-card:hover h3 {
+    color: #ffffff;
+}
+
+.exercise-card p {
+    font-size: 0.95em;
+    color: #6c757d; 
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.exercise-card:hover p {
+    color: #e0e0e0; 
+}
+
+/* Đường kẻ dưới cùng */
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 40px 0;
+}
