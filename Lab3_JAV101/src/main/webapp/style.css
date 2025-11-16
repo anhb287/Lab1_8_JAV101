@@ -97,3 +97,33 @@ hr {
     background: #e0e0e0;
     margin: 40px 0;
 }
+
+/* ===================== */
+/* 🛒 GIỎ HÀNG GÓC PHẢI */
+/* ===================== */
+.cart-icon {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    z-index: 999;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.cart-icon:hover {
+    background-color: #e9f7ff;
+}
+
+.cart-count {
+    color: red;
+    font-weight: bold;
+}
