@@ -5,6 +5,6 @@
     <fullyQualifiedTypeName name="Controller.UserServlet"/>
     <fullyQualifiedTypeName name="java.security.ProtectionDomain"/>
     <fullyQualifiedTypeName name="org.apache.jasper.runtime.ProtectedFunctionMapper"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
 </qualifiedTypeNameHistroy>
