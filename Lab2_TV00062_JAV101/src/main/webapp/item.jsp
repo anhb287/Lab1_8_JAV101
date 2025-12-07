@@ -1,0 +1,4 @@
+<div class="div_item" style="margin: 10px; text-align:center;">
+   <img src="/Lab2_TV00062_JAV101/img/${param.img}" width="200px" height="200px"/>
+   <p>${param.name}</p>
+</div>

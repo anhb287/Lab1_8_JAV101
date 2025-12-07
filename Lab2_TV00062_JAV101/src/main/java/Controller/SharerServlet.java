@@ -1,0 +1,25 @@
+package Controller;
+
+import java.io.IOException;
+import java.util.Date;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/sharer")
+public class SharerServlet extends HttpServlet{
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException {
+			// 1. Gán Attribute vào request để truyền dữ liệu
+			req.setAttribute("message", "Welcome Fpt Polytechnic!");
+			req.setAttribute("now", new Date());
+			// 2. Chuyển tiếp yêu cầu (forward) sang trang JSP
+			req.getRequestDispatcher("/page1.jsp").forward(req, resp);
+	}
+	
+}
