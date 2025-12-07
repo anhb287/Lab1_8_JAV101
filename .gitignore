@@ -1,0 +1,12 @@
+# Bỏ qua các thư mục dự án không mong muốn
+.metadata/
+asm_T2/
+asm_T2_1/
+AssignmentJav/
+Assignment-java3/
+FPL_JAVA3_T2/
+Lab1_TV00062/
+Lab2_TV00062_JAV101/
+Lab3_JAV101/
+Lab4_JAV101/
+Servers/
