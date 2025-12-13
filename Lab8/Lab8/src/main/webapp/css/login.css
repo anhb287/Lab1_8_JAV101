@@ -1,0 +1,109 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== PAGE STYLE ===== */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
+    color: #333;
+    height: 100vh;
+}
+
+/* ===== LOGIN BOX ===== */
+.login-box {
+    width: 380px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    animation: fadeIn 0.5s ease;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 24px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* ===== LABEL ===== */
+.login-box label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* ===== INPUT ===== */
+.login-box input,
+.login-box .login-input {
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background: #fdfdfd;
+    margin-bottom: 20px;
+    transition: border 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-box input:focus,
+.login-box .login-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.25);
+    outline: none;
+}
+
+/* ===== BUTTON ===== */
+.login-box .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.login-box .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== ALERT ERROR ===== */
+.alert-error {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color: #e74c3c;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-12px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

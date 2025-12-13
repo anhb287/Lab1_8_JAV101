@@ -1,0 +1,367 @@
+/* Thiết lập chung và Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+    color: #343a40; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Định kiểu Header và Logo */
+.page-header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.header-logo {
+    display: block;
+    margin: 15px auto; 
+    max-width: 180px; 
+    height: auto;
+}
+
+/* ===== Sửa Lỗi Menu Điều hướng (.main-nav) ===== */
+.main-nav { 
+    background-color: #007bff; /* Xanh dương nổi bật */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* QUAN TRỌNG: Hiển thị menu trên một hàng */
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.main-nav li {
+    margin: 0;
+    /* Đảm bảo li không bị gạch đầu dòng */
+}
+
+.main-nav a {
+    color: #ffffff !important; /* QUAN TRỌNG: Ép màu trắng cho chữ, khắc phục lỗi màu link mặc định */
+    text-decoration: none;
+    padding: 15px 25px; 
+    display: block;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #0056b3; 
+    color: #ffc107 !important; 
+}
+
+/* ===== Nội dung Chính (main-content) ===== */
+.main-content {
+    flex: 1; 
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Thêm margin-top để tách biệt khỏi menu */
+    background-color: #ffffff;
+    min-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.main-content h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #007bff; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 18px 0;
+    font-size: 14px;
+    /* Đảm bảo footer luôn ở dưới cùng nhờ body: display: flex; và main-content: flex: 1; */
+}
+
+/* ===== Content Department ===== */
+.content-department {
+    width: 90%;
+    max-width: 800px; /* giảm chiều ngang */
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.content-department:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Form Department */
+.content-department form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-department .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-department label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.content-department input,
+.content-department textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fdfdfd;
+    transition: 0.25s ease;
+}
+
+.content-department input:focus,
+.content-department textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.25);
+    outline: none;
+}
+
+/* Buttons */
+.content-department .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Table luôn full-width */
+.content-department .table-department {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+.table-department th,
+.table-department td {
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.table-department th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.table-department tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table-department tr:hover {
+    background-color: #e9f2ff;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: 0.25s ease;
+    min-width: 100px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Hiệu ứng nổi */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Button Danger */
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+/* Button Secondary */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #565e64;
+}
+
+/* Form actions: căn đều */
+.form-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.content-department .form-group-inline {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+
+.content-department .form-group-inline label {
+    margin-right: 15px; 
+    margin-bottom: 0; 
+    min-width: 100px; 
+}
+
+.content-department .form-group-inline input[type="radio"] {
+    width: auto; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.content-department select {
+    
+    width: 50%; 
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fdfdfd;
+    transition: 0.25s ease;
+}
+
+.content-department select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.25);
+    outline: none;
+}
+
+
+.content-department .form-group select {
+    margin-top: 5px; 
+}
+
+
+
+/* FORM TÌM KIẾM */
+.content-department .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.content-department .search-form input {
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.content-department .search-form button {
+    min-width: 100px;
+}
+
+/* FORM QUẢN LÝ NHÂN VIÊN */
+.content-department .form-employee {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.alert-error {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color: #e74c3c;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
+}
+
+
+
+/* ===== LOGIN PAGE ===== */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: linear-gradient(135deg, #e3f2fd, #f5f7fa);
+}
+
+.login-box {
+    width: 380px;
+    padding: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    animation: fadeIn 0.5s ease;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.login-box label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+.login-box input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.25);
+    outline: none;
+}
+
+.login-box button {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
